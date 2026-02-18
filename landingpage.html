@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page.html</title>
+
+    <body style=" background-img: url('https:// raw.githubusercontent.com/jenalexismedida42-cpu/De Cairos Resort/main/
+    
+    <!-- STYLE: Main CSS for aesthetics, animations, and effects -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: rgba(0, 102, 204, 0.8);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(0, 102, 204, 0.3));
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        header {
+            background: rgba(0, 122, 204, 0.9);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            font-family: 'Cinzel', serif;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 40px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #ffd700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #fffacd;
+            transform: scale(1.2) rotate(-2deg);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            animation: fadeInUp 1s ease-in-out;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #007acc;
+            margin-top: 0;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+
+        p {
+            line-height: 1.7;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        .button {
+            display: inline-block;
+            background: #007acc;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background: #004080;
+            transform: scale(1.1) rotate(-1deg);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #555;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            animation: fadeInUp 1.3s ease-in-out;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: 200px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.2) rotate(-3deg);
+        }
+
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .caption {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header style="display:flex; align-items:center; justify-content:center; gap:20px;">
+    <img src="pic4.jpg" alt="De Cairos Resort Logo" 
+         style="height:100px; width:100px; border-radius:50%; object-fit:cover; margin-right:30px;">
+    <span style="font-family:'Cormorant Garamond', serif; font-size:3rem; color:#FFD700;">
+        De Cairos Resort
+    </span>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="event.html">Event</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="services.html">Services</a>
+</nav>
+
+<div class="container">
+    <h2>Mountain and Ocean View Resort</h2>
+    <p>
+        Discover the perfect mountain and ocean view getaway at De Cairos Resort in Cebu, Philippines.
+        Relax in our luxurious rooms, enjoy our scenic pools, and host unforgettable events in our spacious venues.
+    </p>
+</div>
+
+<div class="container">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="pic1.png" alt="Scenic">
+            <div class="caption">Scenic</div>
+        </div>
+        <div class="gallery-item">
+            <img src="pic2.png" alt="Tranquil">
+            <div class="caption">Tranquil</div>
+        </div>
+        <div class="gallery-item">
+            <img src="pic3.png" alt="Luxurious">
+            <div class="caption">Luxurious</div>
+        </div>
+    </div>
+</div>
+
+<footer>© 2025 De Cairos Resort | Cebu, Philippines</footer>
+
+</body>
+</html> 
